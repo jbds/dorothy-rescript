@@ -14,10 +14,15 @@
     "in-source": true
   },
   "suffix": ".bs.js",
-  "bs-dependencies": [],
+  "bs-dependencies": [
+    "@rescript/react"
+  ],
   "ppx-flags": [],
   "refmt": 3,
   "warnings": {
     "error": "+101"
   },
+  "reason": {
+    "react-jsx": 3
+  }
 }
