@@ -1,10 +1,12 @@
 @react.component
-let make = () => {
+let make = (~isLandscape) => {
+  //
   <>
     <div> {React.string("Hello Scoresheet")} </div>
     <table
+    // note vh below is not vhTrue, but small inaccuracy is benign here
       style={ReactDOM.Style.make(
-        ~fontSize={"2.0vh"},
+        ~fontSize=isLandscape ? "1.9vh" : "1.9vw",
         ~fontFamily={"Trebuchet MS"},
         ~color={"#26653B"},
         ~margin={"auto"},

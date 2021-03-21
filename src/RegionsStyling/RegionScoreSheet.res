@@ -12,5 +12,5 @@ let make = (~isLandscape, ~vhTrue) => {
     ~overflowY="auto",
     (),
   )
-  <div style> <ContentScoreSheet /> </div>
+  <div style> <ContentScoreSheet isLandscape /> </div>
 }

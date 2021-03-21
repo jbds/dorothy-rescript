@@ -21,7 +21,9 @@ function RegionScoreSheet(Props) {
   };
   return React.createElement("div", {
               style: style
-            }, React.createElement(ContentScoreSheet.make, {}));
+            }, React.createElement(ContentScoreSheet.make, {
+                  isLandscape: isLandscape
+                }));
 }
 
 var make = RegionScoreSheet;

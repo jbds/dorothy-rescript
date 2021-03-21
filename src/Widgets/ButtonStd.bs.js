@@ -14,7 +14,7 @@ function ButtonStd(Props) {
                     color: color,
                     fontFamily: "Trebuchet MS",
                     fontSize: isLandscape ? "1.9vh" : "1.9vw",
-                    height: isLandscape ? "5.0vh" : "5vw",
+                    height: isLandscape ? "5.0vh" : "5.0vw",
                     margin: "0vh 0.5vh 0vh 0vh",
                     borderRadius: "5px"
                   }
