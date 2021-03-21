@@ -5,7 +5,8 @@
     "build": "bsb -make-world",
     "clean": "bsb -clean-world",
     "start": "bsb -make-world -w -ws _",
-    "server": "moduleserve ./ --port 8000",
+    "serverComment": "use 0.0.0.0 address to allow listening on en0",
+    "server": "moduleserve ./ --port 8000 --host 0.0.0.0",
     "check-version": "bsb -v",
     "help": "bsb -help",
     "where": "bsb -where"
