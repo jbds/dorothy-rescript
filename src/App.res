@@ -3,7 +3,7 @@
 @react.component
 let make = (~isLandscape: bool, ~vhTrue: float) => {
   // we deliberately choose not to style the root element, so can use a fragment here
-  // all components will include their local styles
+  // all sub components will include their local styles
   // note that the only styling outside of the root element is in index.html
   <>
     <RegionTableSeating isLandscape vhTrue />

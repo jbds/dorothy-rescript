@@ -9,6 +9,9 @@
 // note js property becomes an array key?
 doc["title"] = "Dorothy v0.01"
 
+// render can be device orientation specific by injecting isLandscape to use in the app
+// fix iOS Safari and Chrome feature/bug which reports vh incorrectly
+// by injecting the true vh value to use in the app
 let reRenderApp = (isLandscape, vhTrue) => {
   // Dom access can actually fail. ResScript
   // is really explicit about handling edge cases!
