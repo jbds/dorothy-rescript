@@ -2,13 +2,13 @@
 'use strict';
 
 var React = require("react");
-var RegionCardTable = require("./Components/RegionCardTable.bs.js");
-var RegionScoreSheet = require("./Components/RegionScoreSheet.bs.js");
-var RegionTableSeating = require("./Components/RegionTableSeating.bs.js");
-var RegionCardTableBRHS = require("./Components/RegionCardTableBRHS.bs.js");
-var RegionCardTableTLHS = require("./Components/RegionCardTableTLHS.bs.js");
-var RegionBiddingHistory = require("./Components/RegionBiddingHistory.bs.js");
-var RegionBiddingKeyboard = require("./Components/RegionBiddingKeyboard.bs.js");
+var RegionCardTable = require("./RegionsStyling/RegionCardTable.bs.js");
+var RegionScoreSheet = require("./RegionsStyling/RegionScoreSheet.bs.js");
+var RegionTableSeating = require("./RegionsStyling/RegionTableSeating.bs.js");
+var RegionCardTableBRHS = require("./RegionsStyling/RegionCardTableBRHS.bs.js");
+var RegionCardTableTLHS = require("./RegionsStyling/RegionCardTableTLHS.bs.js");
+var RegionBiddingHistory = require("./RegionsStyling/RegionBiddingHistory.bs.js");
+var RegionBiddingKeyboard = require("./RegionsStyling/RegionBiddingKeyboard.bs.js");
 
 function App(Props) {
   var isLandscape = Props.isLandscape;

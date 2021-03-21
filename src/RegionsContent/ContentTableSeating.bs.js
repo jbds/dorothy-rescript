@@ -2,7 +2,7 @@
 'use strict';
 
 var React = require("react");
-var ButtonStd = require("./ButtonStd.bs.js");
+var ButtonStd = require("../Widgets/ButtonStd.bs.js");
 
 function ContentTableSeating(Props) {
   var isLandscape = Props.isLandscape;

@@ -3,7 +3,7 @@
 
 var Ute = require("../Ute.bs.js");
 var React = require("react");
-var ContentTableSeating = require("./ContentTableSeating.bs.js");
+var ContentTableSeating = require("../RegionsContent/ContentTableSeating.bs.js");
 
 function RegionTableSeating(Props) {
   var isLandscape = Props.isLandscape;

@@ -3,7 +3,7 @@
 
 var Ute = require("../Ute.bs.js");
 var React = require("react");
-var ContentScoreSheet = require("./ContentScoreSheet.bs.js");
+var ContentScoreSheet = require("../RegionsContent/ContentScoreSheet.bs.js");
 
 function RegionScoreSheet(Props) {
   var isLandscape = Props.isLandscape;
