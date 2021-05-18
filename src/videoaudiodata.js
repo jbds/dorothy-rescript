@@ -1,7 +1,8 @@
 'use strict';
 
 const { LocalDataTrack, connect, createLocalTracks } = require('twilio-video');
-const colorHash = new (require('color-hash'))();
+const ch = require('color-hash').default;
+const colorHash = new ch();
 
 const canvas = document.getElementById('canvas');
 const connectButton = document.getElementById('connect');
@@ -160,12 +161,13 @@ async function main() {
   const dataTrack = setupLocalDataTrack();
   const audioAndVideoTrack = await setupLocalAudioAndVideoTracks(video);
 
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  });
+  // not required JB 18/05/21
+  // canvas.width = window.innerWidth;
+  // canvas.height = window.innerHeight;
+  // window.addEventListener('resize', () => {
+  //   canvas.width = window.innerWidth;
+  //   canvas.height = window.innerHeight;
+  // });
 
   const tracks = audioAndVideoTrack.concat(dataTrack);
 
@@ -339,7 +341,7 @@ function drawCircle(canvas, color, x, y) {
 }
 
 // Go!
-//main().catch(console.error);
+main().catch(console.error);
 
 // make main visible outside of module
 //exports.main = main;

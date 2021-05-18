@@ -42,7 +42,5 @@ w["addEventListener"]("resize", _event => {
 w["addEventListener"]("load", _event => {
   Js.log("event window load..")
   renderAllOnLoadOrResize()
+  //vad["main"]
 })
-
-// finally call twilio
-vad["main"]
