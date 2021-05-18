@@ -6,6 +6,9 @@ var React = require("react");
 var Caml_obj = require("bs-platform/lib/js/caml_obj.js");
 var ReactDom = require("react-dom");
 
+const vad = require("./videoaudiodata.js")
+;
+
 document.title = "Dorothy v0.02";
 
 function reRenderApp(isLandscape, vhTrue) {

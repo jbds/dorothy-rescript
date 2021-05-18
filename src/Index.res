@@ -1,5 +1,9 @@
+%%raw(`const vad = require("./videoaudiodata.js")`)
+
 @val external doc: 'a = "document"
 @val external w: 'a = "window"
+
+@val external vad: 'a = "vad"
 
 // The purpose of this top level module is two fold:
 // a) Write out the document title with a version number
@@ -39,3 +43,6 @@ w["addEventListener"]("load", _event => {
   Js.log("event window load..")
   renderAllOnLoadOrResize()
 })
+
+// finally call twilio
+vad["main"]

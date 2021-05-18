@@ -340,3 +340,6 @@ function drawCircle(canvas, color, x, y) {
 
 // Go!
 //main().catch(console.error);
+
+// make main visible outside of module
+//exports.main = main;

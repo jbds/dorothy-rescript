@@ -25,6 +25,7 @@
   "dependencies": {
     "@rescript/react": "^0.10.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "twilio-video": "^2.14.0"
   }
 }
