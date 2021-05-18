@@ -31128,7 +31128,7 @@ var React = require("react");
 var Caml_obj = require("bs-platform/lib/js/caml_obj.js");
 var ReactDom = require("react-dom");
 
-document.title = "Dorothy v0.01";
+document.title = "Dorothy v0.02";
 
 function reRenderApp(isLandscape, vhTrue) {
   var root = document.querySelector("#root");

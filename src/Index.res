@@ -7,7 +7,7 @@
 // and inject gIsLandcape to let render be screen-aspect-ratio specific
 
 // note js property becomes an array key?
-doc["title"] = "Dorothy v0.01"
+doc["title"] = "Dorothy v0.02"
 
 // render can be device orientation specific by injecting isLandscape to use in the app
 // fix iOS Safari and Chrome feature/bug which reports vh incorrectly
