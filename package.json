@@ -18,6 +18,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "browserify": "^17.0.0",
     "bs-platform": "*",
     "moduleserve": "^0.9.1"
   },
