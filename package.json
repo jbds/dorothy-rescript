@@ -9,7 +9,8 @@
     "server": "moduleserve ./ --port 8000 --host 0.0.0.0",
     "check-version": "bsb -v",
     "help": "bsb -help",
-    "where": "bsb -where"
+    "where": "bsb -where",
+    "deploy": "browserify ./src/Index.bs.js -o ./public/bundle.js"
   },
   "keywords": [
     "rescript"
