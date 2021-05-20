@@ -1,9 +1,9 @@
-%%raw(`const vad = require("./videoaudiodata.js")`)
+@module("./videoaudiodata.js") external main: unit => Js.Promise.t<'a> = "main"
 
 @val external doc: 'a = "document"
 @val external w: 'a = "window"
 
-@val external vad: 'a = "vad"
+@val external setTimeout: (unit => unit, int) => float = "setTimeout"
 
 // The purpose of this top level module is two fold:
 // a) Write out the document title with a version number
@@ -42,5 +42,11 @@ w["addEventListener"]("resize", _event => {
 w["addEventListener"]("load", _event => {
   Js.log("event window load..")
   renderAllOnLoadOrResize()
-  //vad["main"]
 })
+
+let delayedaction = () => {
+  Js.log("after delay 2000ms")
+  let dummy = main()
+}
+
+let dummyId = setTimeout(delayedaction, 2000)

@@ -6,7 +6,15 @@ var ButtonStd = require("../Widgets/ButtonStd.bs.js");
 
 function ContentTableSeating(Props) {
   var isLandscape = Props.isLandscape;
-  return React.createElement(React.Fragment, undefined, React.createElement("div", undefined, "Hello Table Seating"), React.createElement("table", {
+  return React.createElement(React.Fragment, undefined, React.createElement(ButtonStd.make, {
+                  isLandscape: isLandscape,
+                  label: "Join",
+                  id: "connect"
+                }), React.createElement(ButtonStd.make, {
+                  isLandscape: isLandscape,
+                  label: "Leave",
+                  id: "disconnect"
+                }), React.createElement("div", undefined, "Hello Table Seating"), React.createElement("table", {
                   style: {
                     border: "0px solid black",
                     borderCollapse: "collapse",
@@ -26,7 +34,8 @@ function ContentTableSeating(Props) {
                               }
                             }, React.createElement(ButtonStd.make, {
                                   isLandscape: isLandscape,
-                                  label: "N"
+                                  label: "N",
+                                  id: "x"
                                 })), React.createElement("td", {
                               style: {
                                 border: "0px solid red",
@@ -36,7 +45,8 @@ function ContentTableSeating(Props) {
                               }
                             }, React.createElement(ButtonStd.make, {
                                   isLandscape: isLandscape,
-                                  label: "E"
+                                  label: "E",
+                                  id: "x"
                                 })), React.createElement("td", {
                               style: {
                                 border: "0px solid red",
@@ -46,7 +56,8 @@ function ContentTableSeating(Props) {
                               }
                             }, React.createElement(ButtonStd.make, {
                                   isLandscape: isLandscape,
-                                  label: "S"
+                                  label: "S",
+                                  id: "x"
                                 })), React.createElement("td", {
                               style: {
                                 border: "0px solid red",
@@ -56,7 +67,8 @@ function ContentTableSeating(Props) {
                               }
                             }, React.createElement(ButtonStd.make, {
                                   isLandscape: isLandscape,
-                                  label: "W"
+                                  label: "W",
+                                  id: "x"
                                 })), React.createElement("td", {
                               style: {
                                 border: "0px solid red",
@@ -66,7 +78,8 @@ function ContentTableSeating(Props) {
                               }
                             }, React.createElement(ButtonStd.make, {
                                   isLandscape: isLandscape,
-                                  label: "X"
+                                  label: "X",
+                                  id: "x"
                                 })), React.createElement("td", {
                               style: {
                                 border: "0px solid red",
@@ -76,7 +89,8 @@ function ContentTableSeating(Props) {
                               }
                             }, React.createElement(ButtonStd.make, {
                                   isLandscape: isLandscape,
-                                  label: "Y"
+                                  label: "Y",
+                                  id: "x"
                                 })), React.createElement("td", {
                               style: {
                                 border: "0px solid red",
@@ -86,457 +100,8 @@ function ContentTableSeating(Props) {
                               }
                             }, React.createElement(ButtonStd.make, {
                                   isLandscape: isLandscape,
-                                  label: "Z"
-                                }))), React.createElement("tr", {
-                          style: {
-                            backgroundColor: "#f8f8f8",
-                            color: "#000000"
-                          }
-                        }, React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "N"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "E"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "S"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "W"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "X"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "Y"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "Z"
-                                }))), React.createElement("tr", {
-                          style: {
-                            backgroundColor: "#f8f8f8",
-                            color: "#000000"
-                          }
-                        }, React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "N"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "E"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "S"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "W"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "X"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "Y"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "Z"
-                                }))), React.createElement("tr", {
-                          style: {
-                            backgroundColor: "#f8f8f8",
-                            color: "#000000"
-                          }
-                        }, React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "N"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "E"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "S"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "W"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "X"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "Y"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "Z"
-                                }))), React.createElement("tr", {
-                          style: {
-                            backgroundColor: "#f8f8f8",
-                            color: "#000000"
-                          }
-                        }, React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "N"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "E"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "S"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "W"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "X"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "Y"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "Z"
-                                }))), React.createElement("tr", {
-                          style: {
-                            backgroundColor: "#f8f8f8",
-                            color: "#000000"
-                          }
-                        }, React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "N"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "E"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "S"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "W"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "X"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "Y"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "Z"
-                                }))), React.createElement("tr", {
-                          style: {
-                            backgroundColor: "#f8f8f8",
-                            color: "#000000"
-                          }
-                        }, React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "N"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "E"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "S"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "W"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "X"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "Y"
-                                })), React.createElement("td", {
-                              style: {
-                                border: "0px solid red",
-                                borderCollapse: "collapse",
-                                margin: "0vh",
-                                padding: "0vh 0vh 0vh 0vh"
-                              }
-                            }, React.createElement(ButtonStd.make, {
-                                  isLandscape: isLandscape,
-                                  label: "Z"
+                                  label: "Z",
+                                  id: "x"
                                 }))))));
 }
 

@@ -4,7 +4,7 @@ let make = (
   // // ~dispatch: Global.action => unit,
   // // ~action: Global.action,
   ~label: string,
-  // ~id: string,
+  ~id: string,
   // ~isActive: bool=true,
   // ~isVisible: bool=true,
   // ~isWasteOfSpace: bool=false,
@@ -12,10 +12,10 @@ let make = (
 ) => {
   <>
     <button
-    // id
-    // onClick={_e => dispatch(action)} //Js.log("Clicked shuffle"))
-    // note vh below is not vhTrue, but small inaccuracy is benign here
-    // portrait use on iPad aspect ratio empirically suggeste reduction in font size ~10%
+      id
+      // onClick={_e => dispatch(action)} //Js.log("Clicked shuffle"))
+      // note vh below is not vhTrue, but small inaccuracy is benign here
+      // portrait use on iPad aspect ratio empirically suggeste reduction in font size ~10%
       style={ReactDOM.Style.make(
         ~color,
         ~fontSize=isLandscape ? "1.9vh" : "1.7vw",

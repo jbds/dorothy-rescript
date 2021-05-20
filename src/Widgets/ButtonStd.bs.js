@@ -6,9 +6,11 @@ var React = require("react");
 function ButtonStd(Props) {
   var isLandscape = Props.isLandscape;
   var label = Props.label;
+  var id = Props.id;
   var colorOpt = Props.color;
   var color = colorOpt !== undefined ? colorOpt : "#26653B";
   return React.createElement(React.Fragment, undefined, React.createElement("button", {
+                  id: id,
                   style: {
                     border: "1px solid #26653B",
                     color: color,

@@ -1,17 +1,22 @@
 'use strict';
 
+console.log('start of vad module');
 const { LocalDataTrack, connect, createLocalTracks } = require('twilio-video');
 const ch = require('color-hash').default;
 const colorHash = new ch();
 
 const canvas = document.getElementById('canvas');
-const connectButton = document.getElementById('connect');
-const disconnectButton = document.getElementById('disconnect');
+//const connectButton = document.getElementById('connect');
+//const disconnectButton = document.getElementById('disconnect');
 const form = document.getElementById('form');
 const identityInput = document.getElementById('identity');
 const nameInput = document.getElementById('name');
 const participants = document.getElementById('participants');
-const video = document.querySelector('#local-participant > video');
+// move this assignment so it happens after dom is set up JB 20/05/21
+//const video = document.querySelector('#local-participant > video');
+//console.log('check connect id exists:');
+// blows up
+//console.log(document.getElementById('connect').id);
 
 /**
  * Setup a LocalDataTrack to transmit mouse coordinates.
@@ -114,7 +119,8 @@ function setupLocalDataTrack() {
  * @param {HTMLVideoElement} video
  * @returns {Promise<Array<LocalAudioTrack|LocalVideoTrack>>} audioAndVideoTrack
  */
-async function setupLocalAudioAndVideoTracks(video) {
+async function setupLocalAudioAndVideoTracks() {
+  const video = document.querySelector('#local-participant > video');
   const audioAndVideoTrack = await createLocalTracks();
   audioAndVideoTrack.forEach(track => track.attach(video));
   return audioAndVideoTrack;
@@ -149,8 +155,9 @@ function didDisconnect(error) {
   }
   identityInput.disabled = false;
   nameInput.disabled = false;
-  connectButton.disabled = false;
-  disconnectButton.disabled = true;
+  //connectButton.disabled = false;
+  document.getElementById('connect').disabled = false;
+  document.getElementById('disconnect').disabled = true;
 }
 
 /**
@@ -159,7 +166,7 @@ function didDisconnect(error) {
  */
 async function main() {
   const dataTrack = setupLocalDataTrack();
-  const audioAndVideoTrack = await setupLocalAudioAndVideoTracks(video);
+  const audioAndVideoTrack = await setupLocalAudioAndVideoTracks();
 
   // not required JB 18/05/21
   // canvas.width = window.innerWidth;
@@ -171,13 +178,13 @@ async function main() {
 
   const tracks = audioAndVideoTrack.concat(dataTrack);
 
-  connectButton.addEventListener('click', async event => {
+  document.getElementById('connect').addEventListener('click', async event => {
     event.preventDefault();
 
     identityInput.disabled = true;
     nameInput.disabled = true;
-    connectButton.disabled = true;
-    disconnectButton.disabled = false;
+    document.getElementById('connect').disabled = true;
+    document.getElementById('disconnect').disabled = false;
 
     try {
       const identity = identityInput.value;
@@ -209,7 +216,7 @@ async function main() {
     }
   });
 
-  disconnectButton.addEventListener('click', event => {
+  document.getElementById('disconnect').addEventListener('click', event => {
     event.preventDefault();
 
     if (connectAttempt) {
@@ -340,8 +347,10 @@ function drawCircle(canvas, color, x, y) {
   context.stroke();
 }
 
+//console.log('about to call main()');
 // Go!
-main().catch(console.error);
+//main().catch(console.error);
+//console.log('main() has been called');
 
 // make main visible outside of module
-//exports.main = main;
+exports.main = main;
